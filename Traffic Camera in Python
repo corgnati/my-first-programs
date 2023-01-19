@@ -1,0 +1,20 @@
+'''
+Goals:
+The maximum permitted speed is 80 km/h on a highway.
+I will create a program that receives from the user the speed he is driving, and based on this speed, 
+say whether the user has received a light, serious or very serious traffic ticket
+if the person is below the maximum speed, the program should display the message "Be happy! You didn't get a traffic ticket"
+If the person is up to 10 km/h above the permitted speed, the program should display the message "You took a light traffic ticket"
+if the user is above the speed between 11 and 20 km/h, the program should display the message: "you took a serious traffic ticket"
+if the user is more than 20 km/h above the allowed speed, the program should display the message "you took a very serious traffic ticket"
+'''
+current_speed = int(input('how fast did you pass through the traffic camera?'))
+top_speed = 80
+if current_speed <= top_speed:
+  print('Be Happy! You did not get a traffic ticket')
+elif current_speed > top_speed and current_speed <= top_speed + 10 :
+  print('You took a light traffic ticket')
+elif current_speed > top_speed + 11 and current_speed < top_speed + 20 :
+  print('you took a serious traffic ticket')
+elif current_speed > top_speed + 20 :
+  print('you took a very serious traffic ticket') 
